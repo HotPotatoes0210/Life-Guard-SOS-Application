@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C927961E2CFB1D3A00E0B283 /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C927961D2CFB1D3300E0B283 /* ChatBot.swift */; };
+		C928A3D22CFCCDC7004E220C /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = C928A3D12CFCCDC7004E220C /* SwiftOpenAI */; };
+		C928A3D52CFCCEF3004E220C /* Ollama in Frameworks */ = {isa = PBXBuildFile; productRef = C928A3D42CFCCEF3004E220C /* Ollama */; };
+		C928A3D82CFD59AE004E220C /* Ollama in Frameworks */ = {isa = PBXBuildFile; productRef = C928A3D72CFD59AE004E220C /* Ollama */; };
+		C928A3DA2CFD7150004E220C /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928A3D92CFD714B004E220C /* History.swift */; };
+		C94B2BF52CF0BB130094FB13 /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = C94B2BEE2CF0BB130094FB13 /* settings.json */; };
+		C9B8D0AB2D02984200C255EA /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C9B8D0A92D02984200C255EA /* database.sqlite */; };
+		C9B8D0AC2D02984200C255EA /* historydatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C9B8D0AA2D02984200C255EA /* historydatabase.sqlite */; };
+		C9C140EE2CEF07BE006B2A1F /* Database_manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C140ED2CEF07B4006B2A1F /* Database_manager.swift */; };
+		C9C268652CB54F4F008464DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C2685D2CB54F4F008464DF /* Preview Assets.xcassets */; };
+		C9C268662CB54F4F008464DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C2685F2CB54F4F008464DF /* Assets.xcassets */; };
+		C9C268672CB54F4F008464DF /* LifeGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C268612CB54F4F008464DF /* LifeGuard.swift */; };
+		C9C268682CB54F4F008464DF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C268622CB54F4F008464DF /* Login.swift */; };
+		C9C268692CB54F4F008464DF /* function.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C268632CB54F4F008464DF /* function.swift */; };
+		C9E54F222CE8DC830007B15E /* DeviceLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E54F212CE8DC7A0007B15E /* DeviceLocationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90521632CAE763900DABAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C905214A2CAE763700DABAF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90521512CAE763700DABAF6;
+			remoteInfo = LifeGuard;
+		};
+		C905216D2CAE763900DABAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C905214A2CAE763700DABAF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90521512CAE763700DABAF6;
+			remoteInfo = LifeGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C90521522CAE763700DABAF6 /* LifeGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90521622CAE763900DABAF6 /* LifeGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C905216C2CAE763900DABAF6 /* LifeGuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeGuardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C927961D2CFB1D3300E0B283 /* ChatBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
+		C928A3D92CFD714B004E220C /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		C94B2BEE2CF0BB130094FB13 /* settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = settings.json; sourceTree = "<group>"; };
+		C94C6C562D01C8FE00769ACA /* LifeGuard.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LifeGuard.xctestplan; sourceTree = "<group>"; };
+		C9B8D0A92D02984200C255EA /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
+		C9B8D0AA2D02984200C255EA /* historydatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = historydatabase.sqlite; sourceTree = "<group>"; };
+		C9C140ED2CEF07B4006B2A1F /* Database_manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database_manager.swift; sourceTree = "<group>"; };
+		C9C2685D2CB54F4F008464DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9C2685F2CB54F4F008464DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9C268612CB54F4F008464DF /* LifeGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGuard.swift; sourceTree = "<group>"; };
+		C9C268622CB54F4F008464DF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C9C268632CB54F4F008464DF /* function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = function.swift; sourceTree = "<group>"; };
+		C9E54F202CE8D0610007B15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C9E54F212CE8DC7A0007B15E /* DeviceLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLocationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C90521652CAE763900DABAF6 /* LifeGuardTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LifeGuardTests;
+			sourceTree = "<group>";
+		};
+		C905216F2CAE763900DABAF6 /* LifeGuardUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LifeGuardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C905214F2CAE763700DABAF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C928A3D82CFD59AE004E220C /* Ollama in Frameworks */,
+				C928A3D52CFCCEF3004E220C /* Ollama in Frameworks */,
+				C928A3D22CFCCDC7004E220C /* SwiftOpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C905215F2CAE763900DABAF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90521692CAE763900DABAF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C90521492CAE763700DABAF6 = {
+			isa = PBXGroup;
+			children = (
+				C94C6C562D01C8FE00769ACA /* LifeGuard.xctestplan */,
+				C94B2BF22CF0BB130094FB13 /* Database */,
+				C9C268642CB54F4F008464DF /* LifeGuard */,
+				C90521652CAE763900DABAF6 /* LifeGuardTests */,
+				C905216F2CAE763900DABAF6 /* LifeGuardUITests */,
+				C94DC54D2CFCBC9D00F37B88 /* Frameworks */,
+				C90521532CAE763700DABAF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90521532CAE763700DABAF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90521522CAE763700DABAF6 /* LifeGuard.app */,
+				C90521622CAE763900DABAF6 /* LifeGuardTests.xctest */,
+				C905216C2CAE763900DABAF6 /* LifeGuardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94B2BEF2CF0BB130094FB13 /* .vscode */ = {
+			isa = PBXGroup;
+			children = (
+				C94B2BEE2CF0BB130094FB13 /* settings.json */,
+			);
+			path = .vscode;
+			sourceTree = "<group>";
+		};
+		C94B2BF22CF0BB130094FB13 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C9B8D0A92D02984200C255EA /* database.sqlite */,
+				C9B8D0AA2D02984200C255EA /* historydatabase.sqlite */,
+				C94B2BEF2CF0BB130094FB13 /* .vscode */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		C94DC54D2CFCBC9D00F37B88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9C2685E2CB54F4F008464DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C9C2685D2CB54F4F008464DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9C268642CB54F4F008464DF /* LifeGuard */ = {
+			isa = PBXGroup;
+			children = (
+				C9E54F202CE8D0610007B15E /* Info.plist */,
+				C9C2685E2CB54F4F008464DF /* Preview Content */,
+				C9C2685F2CB54F4F008464DF /* Assets.xcassets */,
+				C9C268612CB54F4F008464DF /* LifeGuard.swift */,
+				C927961D2CFB1D3300E0B283 /* ChatBot.swift */,
+				C9C268622CB54F4F008464DF /* Login.swift */,
+				C928A3D92CFD714B004E220C /* History.swift */,
+				C9C140ED2CEF07B4006B2A1F /* Database_manager.swift */,
+				C9C268632CB54F4F008464DF /* function.swift */,
+				C9E54F212CE8DC7A0007B15E /* DeviceLocationService.swift */,
+			);
+			path = LifeGuard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90521512CAE763700DABAF6 /* LifeGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90521762CAE763900DABAF6 /* Build configuration list for PBXNativeTarget "LifeGuard" */;
+			buildPhases = (
+				C905214E2CAE763700DABAF6 /* Sources */,
+				C905214F2CAE763700DABAF6 /* Frameworks */,
+				C90521502CAE763700DABAF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeGuard;
+			packageProductDependencies = (
+				C928A3D12CFCCDC7004E220C /* SwiftOpenAI */,
+				C928A3D42CFCCEF3004E220C /* Ollama */,
+				C928A3D72CFD59AE004E220C /* Ollama */,
+			);
+			productName = LifeGuard;
+			productReference = C90521522CAE763700DABAF6 /* LifeGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90521612CAE763900DABAF6 /* LifeGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90521792CAE763900DABAF6 /* Build configuration list for PBXNativeTarget "LifeGuardTests" */;
+			buildPhases = (
+				C905215E2CAE763900DABAF6 /* Sources */,
+				C905215F2CAE763900DABAF6 /* Frameworks */,
+				C90521602CAE763900DABAF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90521642CAE763900DABAF6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C90521652CAE763900DABAF6 /* LifeGuardTests */,
+			);
+			name = LifeGuardTests;
+			packageProductDependencies = (
+			);
+			productName = LifeGuardTests;
+			productReference = C90521622CAE763900DABAF6 /* LifeGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C905216B2CAE763900DABAF6 /* LifeGuardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C905217C2CAE763900DABAF6 /* Build configuration list for PBXNativeTarget "LifeGuardUITests" */;
+			buildPhases = (
+				C90521682CAE763900DABAF6 /* Sources */,
+				C90521692CAE763900DABAF6 /* Frameworks */,
+				C905216A2CAE763900DABAF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C905216E2CAE763900DABAF6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C905216F2CAE763900DABAF6 /* LifeGuardUITests */,
+			);
+			name = LifeGuardUITests;
+			packageProductDependencies = (
+			);
+			productName = LifeGuardUITests;
+			productReference = C905216C2CAE763900DABAF6 /* LifeGuardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C905214A2CAE763700DABAF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C90521512CAE763700DABAF6 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					C90521612CAE763900DABAF6 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1610;
+						TestTargetID = C90521512CAE763700DABAF6;
+					};
+					C905216B2CAE763900DABAF6 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = C90521512CAE763700DABAF6;
+					};
+				};
+			};
+			buildConfigurationList = C905214D2CAE763700DABAF6 /* Build configuration list for PBXProject "LifeGuard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C90521492CAE763700DABAF6;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C928A3D02CFCCDC7004E220C /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
+				C928A3D62CFD59AE004E220C /* XCLocalSwiftPackageReference "../../../Downloads/ollama-swift-main" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C90521532CAE763700DABAF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90521512CAE763700DABAF6 /* LifeGuard */,
+				C90521612CAE763900DABAF6 /* LifeGuardTests */,
+				C905216B2CAE763900DABAF6 /* LifeGuardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90521502CAE763700DABAF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94B2BF52CF0BB130094FB13 /* settings.json in Resources */,
+				C9B8D0AB2D02984200C255EA /* database.sqlite in Resources */,
+				C9B8D0AC2D02984200C255EA /* historydatabase.sqlite in Resources */,
+				C9C268652CB54F4F008464DF /* Preview Assets.xcassets in Resources */,
+				C9C268662CB54F4F008464DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90521602CAE763900DABAF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C905216A2CAE763900DABAF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C905214E2CAE763700DABAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E54F222CE8DC830007B15E /* DeviceLocationService.swift in Sources */,
+				C9C268672CB54F4F008464DF /* LifeGuard.swift in Sources */,
+				C928A3DA2CFD7150004E220C /* History.swift in Sources */,
+				C9C140EE2CEF07BE006B2A1F /* Database_manager.swift in Sources */,
+				C9C268682CB54F4F008464DF /* Login.swift in Sources */,
+				C9C268692CB54F4F008464DF /* function.swift in Sources */,
+				C927961E2CFB1D3A00E0B283 /* ChatBot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C905215E2CAE763900DABAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90521682CAE763900DABAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90521642CAE763900DABAF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90521512CAE763700DABAF6 /* LifeGuard */;
+			targetProxy = C90521632CAE763900DABAF6 /* PBXContainerItemProxy */;
+		};
+		C905216E2CAE763900DABAF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90521512CAE763700DABAF6 /* LifeGuard */;
+			targetProxy = C905216D2CAE763900DABAF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C90521742CAE763900DABAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C90521752CAE763900DABAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90521772CAE763900DABAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeGuard/LifeGuard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeGuard/Preview Content\"";
+				DEVELOPMENT_TEAM = 5765GWYQ86;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifeGuard/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hook it up with that location homie";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hung.LifeGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C90521782CAE763900DABAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeGuard/LifeGuard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeGuard/Preview Content\"";
+				DEVELOPMENT_TEAM = 5765GWYQ86;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifeGuard/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hook it up with that location homie";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hung.LifeGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C905217A2CAE763900DABAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hung.LifeGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeGuardTests/LifeGuardTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeGuard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LifeGuard";
+			};
+			name = Debug;
+		};
+		C905217B2CAE763900DABAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hung.LifeGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeGuardTests/LifeGuardTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeGuard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LifeGuard";
+			};
+			name = Release;
+		};
+		C905217D2CAE763900DABAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hung.LifeGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeGuard;
+			};
+			name = Debug;
+		};
+		C905217E2CAE763900DABAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hung.LifeGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeGuard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C905214D2CAE763700DABAF6 /* Build configuration list for PBXProject "LifeGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90521742CAE763900DABAF6 /* Debug */,
+				C90521752CAE763900DABAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90521762CAE763900DABAF6 /* Build configuration list for PBXNativeTarget "LifeGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90521772CAE763900DABAF6 /* Debug */,
+				C90521782CAE763900DABAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90521792CAE763900DABAF6 /* Build configuration list for PBXNativeTarget "LifeGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C905217A2CAE763900DABAF6 /* Debug */,
+				C905217B2CAE763900DABAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C905217C2CAE763900DABAF6 /* Build configuration list for PBXNativeTarget "LifeGuardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C905217D2CAE763900DABAF6 /* Debug */,
+				C905217E2CAE763900DABAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C928A3D62CFD59AE004E220C /* XCLocalSwiftPackageReference "../../../Downloads/ollama-swift-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../Downloads/ollama-swift-main";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C928A3D02CFCCDC7004E220C /* XCRemoteSwiftPackageReference "SwiftOpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jamesrochabrun/SwiftOpenAI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C928A3D12CFCCDC7004E220C /* SwiftOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C928A3D02CFCCDC7004E220C /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
+			productName = SwiftOpenAI;
+		};
+		C928A3D42CFCCEF3004E220C /* Ollama */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Ollama;
+		};
+		C928A3D72CFD59AE004E220C /* Ollama */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Ollama;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C905214A2CAE763700DABAF6 /* Project object */;
+}

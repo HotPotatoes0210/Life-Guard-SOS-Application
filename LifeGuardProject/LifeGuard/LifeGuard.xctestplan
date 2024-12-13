@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "5172ADD1-CB62-40CB-A56E-9E3F8E14EC72",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "region" : "KR",
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:LifeGuard.xcodeproj",
+      "identifier" : "C90521512CAE763700DABAF6",
+      "name" : "LifeGuard"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LifeGuard.xcodeproj",
+        "identifier" : "C90521612CAE763900DABAF6",
+        "name" : "LifeGuardTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LifeGuard.xcodeproj",
+        "identifier" : "C905216B2CAE763900DABAF6",
+        "name" : "LifeGuardUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
